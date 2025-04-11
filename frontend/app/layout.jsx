@@ -1,3 +1,5 @@
+import { AppProvider } from './context';
+
 export const metadata = {
   title: 'AI Security Scanner',
   description: 'Gratis website beveiliging scan',
@@ -6,7 +8,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="nl">
-      <body>{children}</body>
+      <body>
+        <AppProvider>
+          {children}
+        </AppProvider>
+      </body>
     </html>
   )
 }
