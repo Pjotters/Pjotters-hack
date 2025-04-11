@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import Head from 'next/head';
 
 export default function Home() {
@@ -9,18 +8,15 @@ export default function Home() {
         <meta name="description" content="Controleer je website beveiliging met onze AI-powered scanner" />
       </Head>
 
-      <motion.header 
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
+      <header 
         className="bg-white shadow-sm"
       >
         <div className="container mx-auto px-4 py-6 flex justify-between items-center">
-          <motion.h1 
+          <h1 
             className="text-3xl font-bold text-primary"
-            whileHover={{ scale: 1.05 }}
           >
             AI Security Scanner
-          </motion.h1>
+          </h1>
           <nav className="flex space-x-8">
             <a href="#" className="font-medium hover:text-primary transition">Home</a>
             <a href="#scan" className="font-medium hover:text-primary transition">Scan</a>
@@ -28,13 +24,10 @@ export default function Home() {
             <a href="#contact" className="font-medium hover:text-primary transition">Contact</a>
           </nav>
         </div>
-      </motion.header>
+      </header>
 
       <main className="container mx-auto px-4 py-16">
-        <motion.section 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
+        <section 
           className="text-center mb-24"
         >
           <h2 className="text-5xl font-bold mb-6 text-gray-800">
@@ -43,15 +36,13 @@ export default function Home() {
           <p className="text-xl text-gray-600 max-w-2xl mx-auto mb-10">
             Onze AI controleert automatisch op beveiligingslekken en geeft persoonlijke verbeter tips
           </p>
-          <motion.a
+          <a
             href="#scan"
             className="inline-block bg-primary text-white px-8 py-4 rounded-lg font-medium text-lg hover:bg-primary-dark transition"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
             Start Gratis Scan
-          </motion.a>
-        </motion.section>
+          </a>
+        </section>
 
         <section id="scan" className="mb-24">
           <h3 className="text-3xl font-bold mb-8 text-center">Scan Je Website</h3>
