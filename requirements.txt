@@ -12,4 +12,3 @@ aiohttp==3.9.1
 ratelimit==2.2.1
 
 # Vercel specific
-asgi-server==0.1.0
